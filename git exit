@@ -1,0 +1,155 @@
+[33mcommit 3fe8deb4606bcfcce15e1f62cf2050ebbc53d136[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: ValenciaMoralesAngel <21340534@itnogales.edu.mx>
+Date:   Thu Dec 29 20:39:56 2022 -0600
+
+    nueva pagina
+
+[1mdiff --git a/estilos/inicio.css b/estilos/inicio.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e6daecf[m
+[1m--- /dev/null[m
+[1m+++ b/estilos/inicio.css[m
+[36m@@ -0,0 +1,69 @@[m
+[32m+[m[32m*{[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m    box-sizing: border-box;[m
+[32m+[m[32m}[m
+[32m+[m[32mbody{[m
+[32m+[m[32m    background-color: darkorange;[m
+[32m+[m[32m}[m
+[32m+[m[32m/* inicio navegacion */[m
+[32m+[m[32mheader{[m
+[32m+[m[32m    margin-top: 10px;[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: end;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader nav{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: start;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mheader nav ul{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: start;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader nav ul li{[m
+[32m+[m[32m    display: inline-block;[m
+[32m+[m[32m    margin: 10px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mheader nav ul li a{[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m    color:#000;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader nav ul li a:hover{[m
+[32m+[m[32m    border-bottom: 2px solid #000;[m
+[32m+[m[32m}[m
+[32m+[m[32m.cont-imagen{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: start;[m
+[32m+[m[32m    width: 910px;[m
+[32m+[m[32m    padding: 10px 10px 10px 10px;[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m[32mheader .cont-imagen img{[m
+[32m+[m[32m    width: 20px;[m
+[32m+[m[32m    height: 20px;[m
+[32m+[m[32m}[m
+[32m+[m[32m/* inicio centreo*/[m
+[32m+[m[32mmain{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m}[m
+[32m+[m[32mmain .cont-informacion{[m
+[32m+[m[32m    width: 100vh;[m
+[32m+[m[32m    height: 90vh;[m
+[32m+[m[32m    margin-left: 10px;[m
+[32m+[m[32m    background-color: #fff;[m
+[32m+[m[32m    box-shadow: 10px 10px 50px rgba(0,0,0,0.9);[m
+[32m+[m[32m}[m
+[32m+[m[32mmain .cont-informacion h2,h1{[m
+[32m+[m[32m    margin-top: 12%;[m
+[32m+[m[32m}[m
+[32m+[m[32mmain .cont-informacion-m {[m
+[32m+[m[32m    margin-top:-15px;[m
+[32m+[m[32m    margin-left: -60px;[m
+[32m+[m[32m}[m
+[32m+[m[32mmain .cont-informacion-m img{[m
+[32m+[m[32m    width: 500px;[m
+[32m+[m[32m    height: 590px;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/htmls/index.html b/htmls/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2bcb770[m
+[1m--- /dev/null[m
+[1m+++ b/htmls/index.html[m
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="../estilos/inicio.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <!-- start nav  -->[m
+[32m+[m[32m    <header>[m
+[32m+[m[32m        <div class="cont-imagen">[m
+[32m+[m[32m            <img src="../imagenes y iconos/home.png" alt="">[m[41m    [m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <nav>[m
+[32m+[m[32m            <ul>[m
+[32m+[m[32m                <li><a href="#">Inicio</a></li>[m
+[32m+[m[32m                <li><a href="#">Registro</a></li>[m
+[32m+[m[32m                    <li><a href="#">Somos</a></li>[m
+[32m+[m[32m                <li><a href="#">Iniciar sesion</a></li>[m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m        </nav>[m
+[32m+[m[32m    </header>[m
+[32m+[m[32m    <main>[m
+[32m+[m[32m        <div class="cont-informacion">[m
+[32m+[m[32m            <h1>Trabajo con compromiso</h1>[m
+[32m+[m[32m            <h2>No solo queremos tu seguridad si no la de todos</h2>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempore repellendus, maiores consequatur dolorum necessitatibus! Debitis dolore laudantium, recusandae sunt labore voluptatem. Tempore quidem incidunt explicabo eius mollitia impedit fuga?[m
+[32m+[m[32m            Ipsum nostrum voluptatum distinctio veritatis eligendi tempore ratione iure assumenda veniam placeat. Sapiente ratione eos et fugit non rem. Fuga cumque rem deleniti velit quisquam natus sit provident doloribus odio?[m
+[32m+[m[32m            Error a dicta laudantium velit voluptatum praesentium possimus totam quo. Est cumque voluptatum rem illo autem. Nisi, ullam qui adipisci dolorum quis numquam veritatis exercitationem atque in porro hic placeat!</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="cont-informacion-m">[m
+[32m+[m[32m            <img src="../imagenes y iconos/pngwing.com.png" alt="">[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </main>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/imagenes y iconos/WhatsApp Image 2022-12-25 at 10.51.10 PM.jpeg b/imagenes y iconos/WhatsApp Image 2022-12-25 at 10.51.10 PM.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b600995[m
+Binary files /dev/null and b/imagenes y iconos/WhatsApp Image 2022-12-25 at 10.51.10 PM.jpeg differ
+[1mdiff --git a/imagenes y iconos/amor.jpeg b/imagenes y iconos/amor.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8babc87[m
+Binary files /dev/null and b/imagenes y iconos/amor.jpeg differ
+[1mdiff --git a/imagenes y iconos/bb.jpeg b/imagenes y iconos/bb.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8babc87[m
+Binary files /dev/null and b/imagenes y iconos/bb.jpeg differ
+[1mdiff --git a/imagenes y iconos/home.png b/imagenes y iconos/home.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4c1f9c7[m
+Binary files /dev/null and b/imagenes y iconos/home.png differ
+[1mdiff --git a/imagenes y iconos/nn.jpeg b/imagenes y iconos/nn.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..68a631a[m
+Binary files /dev/null and b/imagenes y iconos/nn.jpeg differ
+[1mdiff --git a/imagenes y iconos/nnn.jpeg b/imagenes y iconos/nnn.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1976fc0[m
+Binary files /dev/null and b/imagenes y iconos/nnn.jpeg differ
+[1mdiff --git a/imagenes y iconos/pngwing.com.png b/imagenes y iconos/pngwing.com.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..91b30cb[m
+Binary files /dev/null and b/imagenes y iconos/pngwing.com.png differ
